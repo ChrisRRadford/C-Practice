@@ -11,7 +11,7 @@
 using namespace cv;
 using namespace cv::xfeatures2d;
 
-void readme();
+void readme(); 
 
 /** @function main */
 int main( int argc, char** argv )
@@ -41,8 +41,8 @@ int main( int argc, char** argv )
   Mat img_keypoints_1; Mat img_keypoints_2;
 
   drawKeypoints( img_1, keypoints_1, img_keypoints_1, Scalar::all(-1), DrawMatchesFlags::DEFAULT );
-
   drawKeypoints( img_2, keypoints_2, img_keypoints_2, Scalar::all(-1), DrawMatchesFlags::DEFAULT );
+
 
   //-- Show detected (drawn) keypoints
   imshow("Keypoints 1", img_keypoints_1 );
@@ -53,6 +53,4 @@ int main( int argc, char** argv )
   return 0;
   }
 
-  /** @function readme */
-  void readme()
-  { std::cout << " Usage: ./SURF_detector <img1> <img2>" << std::endl; }
+  
